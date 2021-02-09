@@ -11,6 +11,8 @@ connectDB()
 
 const app = express()
 
+const __dirname = path.resolve()
+
 // RUN THIS ONLY IN PRODUCTION MODE
 if (process.env.NODE_ENV === 'production') {
   // Set the 'build' folder as a static folder
